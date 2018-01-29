@@ -1,13 +1,23 @@
 export class Device{
-    key? : string ;
-    control : number;
-
+    key?: string;
+    control: number;
+    icon:string;
+    time_morning:string;
+    time_noon:string;
+    time_night:string;
     constructor(
-        control:number
-               )
-   {
-       this.control = control;
-   }
-
-
+        key: string,
+        control:number,
+        icon:string,
+        time_morning:string,
+        time_noon:string,
+        time_night:string
+    ){  
+        this.key    = key;
+        this.control = control;
+        this.icon=icon;
+        this.time_morning =time_morning;
+        this.time_noon = time_noon;
+        this.time_night = time_night;
+    }
 }

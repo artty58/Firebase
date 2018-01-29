@@ -8,7 +8,7 @@ import { HomePage } from '../pages/home/home';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:String = "FirebasePage";
+  rootPage:String = "LoginPage";
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

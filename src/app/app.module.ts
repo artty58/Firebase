@@ -12,7 +12,7 @@ import { HomePage } from '../pages/home/home';
 import { HttpClient } from '@angular/common/http/src/client';
 import { HttpClientModule } from '@angular/common/http';
 import { DatabaseProvider } from '../providers/database/database';
-
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 
 
@@ -32,6 +32,8 @@ import { DatabaseProvider } from '../providers/database/database';
     storageBucket: "art-firebase.appspot.com",
     messagingSenderId: "97390228063"}),  
     AngularFireDatabaseModule,
+    AngularFireAuthModule
+
         
   ],
   bootstrap: [IonicApp],
